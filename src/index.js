@@ -1,5 +1,6 @@
 import _ from "lodash";
 import "./style.css";
+import card from "./card.jpg";
 
 function component() {
   const element = document.createElement("div");
@@ -11,3 +12,8 @@ function component() {
 }
 
 document.body.appendChild(component());
+
+const myImg = new Image();
+myImg.src = card;
+myImg.classList.add("card");
+document.body.appendChild(myImg);
